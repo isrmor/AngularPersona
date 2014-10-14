@@ -10,7 +10,7 @@ module.exports = function(app) {
 	//Modificar los datos de una Persona
 	app.put('/api/persona/:persona_id', Controller.updatePersona);
 	//Borrar una persona
-	app.delete('/api/persona/:persona_id', Controler.removePersona);
+	app.delete('/api/persona/:persona_id', Controller.removePersona);
 	//Application
 	//Carga única de la vista (SPA)
 	app.get('*', function(req, res) {
