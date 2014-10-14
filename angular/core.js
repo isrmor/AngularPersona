@@ -8,6 +8,7 @@ function mainController($scope, $http) {
 	//Obtenemos todos los datos de la base de datos
 	$http.get('/api/persona')
 	.success(function(data) {
+		console.log(data);
 		$scope.personas = data;
 	})
 	.error(function(data) {

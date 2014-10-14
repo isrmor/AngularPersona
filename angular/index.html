@@ -20,18 +20,21 @@
 			<div class="col-sm-6 col-smoffset-1">
 				<table class="table table-stripped">
 					<tr class="info">
+						<td>Numero</td>
 						<td>Nombre</td>
 						<td>Apellidos</td>
 						<td>Edad</td>
 					</tr>
-					<tr ng-repeat="persona in personas" ng-click="selectPerson(persona)">
+					<tr ng-repeat="persona in personas" ng-click="selectPerson(persona)" ng-init="paso = $index">
+						<td>{{ paso }}</td>
+					
 						<td>{{ persona.nombre }}</td>
 						<td>{{ persona.apellido }}</td>
 						<td>{{ persona.edad }}</td>						
 					</tr>
 				</table>
 			</div>
-			<div class="col-sm4 col-sm-offset-1 text-center">
+			<div class="col-sm-4 col-sm-offset-1 text-center">
 				<form name="myForm">
 					<div class="form-group">
 						<input type="text" class="form-control input-lg text-center" placeholder="Nombre" ng-model="newPersona.nombre" required>

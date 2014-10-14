@@ -6,9 +6,10 @@ exports.getPersona = function(req,res) {
 		function(err, persona) {
 			if(err) {
 				res.send(err);
-			} else {
-				res.json(persona); //devuelve todas las personas en JSON
 			}
+			
+			res.json(persona); //devuelve todas las personas en JSON
+			
 		}
 	);
 }
