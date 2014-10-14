@@ -4,9 +4,9 @@ var Controller = require('./controller');
 module.exports = function(app) {
 
 	//devolver todos los Persona
-	app.get('api/persona', Controller.getPersona);
+	app.post('/api/persona', Controller.getPersona);
 	//Crear una nueva Persona
-	app.post('/api/persona', Controller.setPersona);
+	app.post('/api/newPersona', Controller.setPersona);
 	//Modificar los datos de una Persona
 	app.put('/api/persona/:persona_id', Controller.updatePersona);
 	//Borrar una persona

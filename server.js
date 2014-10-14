@@ -9,8 +9,8 @@ var mongoose = require('mongoose');
 var port = process.env.PORT || 8080;
 
 //Configuración
-//Hacemos la conexión a la base de datos Mongo con nombre "PersonasExample"
-mongoose.connect('mongodb://localhost:27017/PersonasExample');
+//Hacemos la conexión a la base de datos Mongo con nombre "PersonasExample1"
+mongoose.connect('mongodb://localhost:27017/PersonasExampleA');
 
 app.configure(function() {
 	app.use(express.static(__dirname + '/angular'));
